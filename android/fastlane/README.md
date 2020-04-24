@@ -35,6 +35,11 @@ xcode-select --install
 fastlane android test
 ```
 Runs all the tests
+### android build
+```
+fastlane android build
+```
+Build Android CI Integration
 ### android beta
 ```
 fastlane android beta

@@ -25,6 +25,12 @@ platform :android do
     gradle(task: "test")
   end
 
+  desc "Build Android CI Integration"
+  lane :build do
+    gradle(task: "assembleRelease")
+
+  end
+
   desc "Submit a new Beta Build to Crashlytics Beta"
   lane :beta do
     gradle(task: "assembleRelease")
